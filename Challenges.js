@@ -1,4 +1,105 @@
 
+// Challenge 1
+
+let markMass = 95;
+let markHeight = 1.88;
+
+markBMI = markMass / markHeight ** 2;
+
+
+let johnMass = 85;
+let johnHeight = 1.76;
+
+johnBMI = johnMass / (johnHeight * johnHeight);
+
+console.log(markBMI, johnBMI);
+
+let markHigherBMI = markBMI > johnBMI;
+
+console.log(markHigherBMI);
+
+
+
+
+// Challenge 2
+
+
+let markMass2 = 78;
+let markHeight2 = 1.69;
+let johnMass2 = 92;
+let johnHeight2 = 1.95;
+
+markBMI = markMass2 / markHeight2 ** 2;
+johnBMI = johnMass2 / (johnHeight2 * johnHeight2);
+
+console.log(markBMI, johnBMI);
+
+
+if(markBMI > johnBMI){
+        console.log("John's BMI is higher than Mark's!");
+    
+}else{
+     
+        console.log("Mark's BMI is higher than John's!");
+};
+
+if(markBMI > johnBMI){
+     
+        console.log(`John's BMI (${markBMI}) is higher than Mark's (${johnBMI})!`)
+
+}else{
+        console.log(`Mark's BMI (${johnBMI}) is higher than John's (${markBMI})!`)  
+}
+
+
+
+
+// Chalange 3
+
+
+const averageDolfins1 = (96 + 108 + 89) / 3;
+const averageKoalas1 = (88 + 91 + 110) / 3;  
+
+
+// const averageDolfins = (97 + 112 + 101) /3;
+// const averageKoalas = (109 + 95 +123) / 3;
+
+// const averageDolfins = (97 + 112 + 101) /3;
+// const averageKoalas = (109 + 95 +106) / 3;
+
+console.log(averageDolfins1, averageKoalas1);
+
+if(averageDolfins1 > averageKoalas1 && averageDolfins1 >= 100){
+        console.log('Dolfins are the winers!');
+}else if( averageDolfins1 < averageKoalas1 && averageKoalas1 >=100){
+        console.log('Koalas are the winers!');
+}else if(averageDolfins1 == averageKoalas1 && averageKoalas1 >=100 && averageDolfins1 >= 100 ){
+        console.log("it's a draw!");
+
+}else{
+        console.log('nobody won!');
+}
+
+
+
+
+// Challenge 4
+
+let bill=275;
+let tip;
+
+if(bill >= 50 && bill<=300){
+        tip = bill * 0.15;
+}else{
+        tip = bill * 0.20; 
+}
+
+let total = bill + tip;
+console.log(bill, tip, total);
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value is ${total}`);
+
+
+
 //    Challenge 5
 
 

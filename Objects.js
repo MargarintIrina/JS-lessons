@@ -100,3 +100,71 @@ console.log(jonas2.age);
 
 
 console.log(jonas2.getSumary());
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// Challenge 7
+
+const mark = {
+        firstName: 'Mark',
+        lastName: 'Miller',
+        mass: 78,
+        height: 1.69,
+        bmiMark: function(){
+                console.log(this);
+                return this.mass / this.height ** 2;
+        }
+};
+const john ={
+        firstName: 'John',
+        lastName: 'Smith',
+        mass: 92,
+        height: 1.95,
+        bmiJohn: function(){
+                console.log(this);
+                return this.mass / this.height ** 2;
+        }
+};
+
+if(mark.bmiMark() > john.bmiJohn()){
+        console.log(`${mark.firstName} ${mark.lastName}'s BMI (${mark.bmiMark()}) is highter than ${john.firstName} ${john.lastName}'s (${john.bmiJohn()})!`)
+}else{
+        console.log(`${john.firstName} ${john.lastName}'s BMI (${john.bmiJohn()}) is highter than ${mark.firstName} ${mark.lastName}'s (${mark.bmiMark()})!`)
+}
+
+
+
+// const mark = {
+//         firstName: 'Mark',
+//         lastName: 'Miller',
+//         mass: 78,
+//         height: 1.69,
+//         calcBMI: function(){
+//                 console.log(this);
+//                 this.bmi = this.mass / this.height ** 2;
+//                 return this.bmi;
+//         }
+// };
+// const john ={
+//         firstName: 'John',
+//         lastName: 'Smith',
+//         mass: 92,
+//         height: 1.95,
+//         calcBMI: function(){
+//                 console.log(this);
+//                 this.bmi = this.mass / this.height ** 2;
+//                 return this.bmi;
+//         }
+// };
+// mark.calcBMI();
+// john.calcBMI();
+
+// if(mark.bmi > john.bmi){
+//         console.log(`${mark.firstName} ${mark.lastName}'s BMI (${mark.bmi}) is highter than ${john.firstName} ${john.lastName}'s (${john.bmi})!`)
+// }else if(john.bmi > mark.bmi){
+//         console.log(`${john.firstName} ${john.lastName}'s BMI (${john.bmi}) is highter than ${mark.firstName} ${mark.lastName}'s (${mark.bmi})!`)
+// }
+

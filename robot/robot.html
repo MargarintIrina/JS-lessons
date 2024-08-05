@@ -11,6 +11,7 @@
         <button onclick="moveRight(); drawMap();">&#10097;</button>
       
         <script>
+                "use strict";
 
                 const LEN = 60;
                 //<-------------------------- x ----------------------->
@@ -30,12 +31,12 @@
                 };
 
                 function moveRight(){
-                        if(rx >= 0 && rx <= (LEN - 1)){
+                        if(rx <= (LEN - 1)){
                                 rx++;
                         }
                 };   
                 function moveLeft(){
-                        if( rx <= LEN && rx > 1){        
+                        if(rx > 1){        
                                 rx--;
                         };
                 };
